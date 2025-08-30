@@ -1,10 +1,12 @@
 /* General Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; line-height: 1.6; transition: background 0.3s, color 0.3s;
+body { font-family: Arial, 
+  sans-serif; line-height: 1.6; transition: background 0.3s, color 0.3s;
 background-color: #FFFCB8; }
 a { text-decoration: none; color: inherit; }
 section { padding: 60px 20px; }
 h2 { margin-bottom: 20px; text-align: center; }
+
 
 
 /* Navbar */
@@ -97,3 +99,74 @@ footer { text-align: center; padding: 20px; background: #E9E294; color: black; }
 body.dark { background: #222; color: #eee; }
 body.dark .navbar { background: rgba(30, 30, 30, 0.9); }
 body.dark .about, body.dark .card, body.dark .project-card, body.dark .contact-grid div, body.dark form,footer,.education { background: #333; color: #eee; }
+
+
+/* 🔹 RESPONSIVE MEDIA QUERIES */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar nav {
+    margin-top: 10px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    margin: 20px auto;
+    width: 180px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+  section {
+    padding: 40px 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .btn {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+  }
+  .hero-img img {
+    width: 220px;
+  }
+  .skills .skill-cards {
+    justify-content: space-around;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr; /* still stack for tablets */
+  }
+  .project-card img {
+    height: 250px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero-img img {
+    width: 250px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr 1fr; /* two columns */
+  }
+  .project-card img {
+    height: 300px;
+  }
+}
