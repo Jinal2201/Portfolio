@@ -31,6 +31,16 @@ h2 { margin-bottom: 20px; text-align: center; }
 /* About */
 .about { background: #EBD6FB; border-radius: 10px; max-width: 800px; margin: auto; padding: 30px; }
 
+/* Carrer Objecctive */
+.CareerObjective{
+ background: #EBD6FB; 
+ border-radius: 10px; 
+ max-width: 800px; 
+ margin: auto; 
+ padding: 30px; 
+ margin-top: 20px;
+}
+
 /* Skills */
 .skills .skill-cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
 .card { 
@@ -65,14 +75,16 @@ h2 { margin-bottom: 20px; text-align: center; }
 /* Projects */
 .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
 .project-card { 
-  background: #fff; 
+  background: #EBD6FB; 
   border-radius: 10px; 
   overflow: hidden; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   text-align: center;
 }
-.project-card img { width: 100%; object-fit: cover; background-color: black;
-height: 300px;}
+.project-card img { width: 100%; 
+  object-fit: cover; 
+  background-color: black;
+  height: 300px;}
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -98,7 +110,7 @@ footer { text-align: center; padding: 20px; background: #E9E294; color: black; }
 /* Dark Mode */
 body.dark { background: #222; color: #eee; }
 body.dark .navbar { background: rgba(30, 30, 30, 0.9); }
-body.dark .about, body.dark .card, body.dark .project-card, body.dark .contact-grid div, body.dark form,footer,.education { background: #333; color: #eee; }
+body.dark .about, body.dark .card, body.dark .project-card, body.dark .contact-grid div, body.dark form,footer,body.dark .education { background: #333; color: #eee; }
 
 
 /* 🔹 RESPONSIVE MEDIA QUERIES */
